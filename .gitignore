@@ -15,3 +15,7 @@
 
 # Env variables
 /source/environment_variables.rb
+
+# Joomla 3 jui
+/source/css/jui
+/source/js/jui
