@@ -1,6 +1,6 @@
 # Middleman (Bootstrap+Slim+SCSS)
 
-## joomla3 branch uses Jooml's version of Bootstrap
+## joomla3 branch uses Joomla's version of Bootstrap
 
 A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Slim templates, and SCSS.
 
