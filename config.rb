@@ -109,6 +109,7 @@ helpers do
 
 end
 
+sprockets.append_path File.join root, 'jui'
 
 # ========================================================================
 # Development-specific configuration
