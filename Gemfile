@@ -9,6 +9,8 @@ gem "slim", "~> 2.0.3"
 gem "middleman-favicon-maker", "~> 3.7"
 gem "middleman-bourbon", "~> 0.0.2"
 
+gem "middleman-livereload", "~> 3.1.0"
+
 # file optimization & minification
 gem "middleman-minify-html", "~> 3.4.0"
 gem "oj", "~> 2.10.0"

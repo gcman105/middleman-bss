@@ -19,6 +19,7 @@ set :js_dir,                'js'
 set :images_dir,            'img'
 
 set :sass, line_comments: false, style: :nested
+set :slim, { :pretty => true, :format => :html5 }
 
 # Internationalization
 activate :i18n
@@ -64,7 +65,7 @@ set :url_home,              "/"
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-#activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -109,7 +110,8 @@ helpers do
 
 end
 
-sprockets.append_path File.join root, 'jui'
+# sprockets.append_path File.join root, 'jui'
+ignore 'jui/less/'
 
 # ========================================================================
 # Development-specific configuration
@@ -125,9 +127,9 @@ configure :build do
   set :site_url, "#{site_url_production}"
   set :sass, style: :compressed
   activate :minify_css
-  activate :minify_html
+# activate :minify_html
   activate :minify_javascript
-  activate :gzip
+# activate :gzip
   # Enable cache buster
   activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
   # Create favicon and device-specific icons
