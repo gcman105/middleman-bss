@@ -1,5 +1,7 @@
 # Middleman (Bootstrap+Slim+SCSS)
 
+## joomla3 branch uses Jooml's version of Bootstrap
+
 A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Slim templates, and SCSS.
 
 **Included packages:**
@@ -8,8 +10,6 @@ A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Sli
 * [HTML5 Boilerplate](http://html5boilerplate.com/)
 * [Slim](http://slim-lang.com/)
 * [Sass](http://sass-lang.com/)
-* [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
-* [Font Awesome](http://fontawesome.io)
 * [Tilt](https://github.com/rtomayko/tilt)
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://modernizr.com/)

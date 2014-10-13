@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 gem "middleman", "~> 3.3.4"
 gem "slim", "~> 2.0.3"
-gem "bootstrap-sass", "~> 3.2.0.1", require: false
-gem "font-awesome-middleman", "~> 4.1.1"
+# gem "bootstrap-sass", "~> 3.2.0.1", require: false
+# gem "font-awesome-middleman", "~> 4.1.1"
 gem "middleman-favicon-maker", "~> 3.7"
 gem "middleman-bourbon", "~> 0.0.2"
 
