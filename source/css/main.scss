@@ -24,6 +24,23 @@ $brand-primary:             #61B5AB;
  * Layout
  * ========================================================================== */
 
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    margin-top: -171px;
+    margin-bottom: -280px;
+}
+
+.logo {
+    position: relative;
+    top: 45px;
+    left: 50px;
+    z-index: 10;
+    margin-top: 0px;
+}
 
 
 /* ==========================================================================
@@ -36,7 +53,19 @@ $brand-primary:             #61B5AB;
  * Primary navigation
  * ========================================================================== */
 
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 20%;
+    margin-bottom: -90px;
+}
 
+.navbar-inner .container ul.nav {
+    float: right;
+}
 
 /* ==========================================================================
  * Globals

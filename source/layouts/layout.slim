@@ -29,7 +29,14 @@ html.no-js
         | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
     #wrap
       header role="banner"
-        == _partial "navigation"
+        .container
+          .logo
+            img src="/img/logo.png"
+          .hero
+            img src="#{lorem.image('3000x2000')}"
+      .navbar-wrapper
+        .container
+          == _partial "navigation"
       main role="document"
         .container
           == yield
