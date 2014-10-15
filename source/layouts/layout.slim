@@ -28,12 +28,19 @@ html.no-js
       p.chromeframe.alert.alert-warning
         | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
     #wrap
-      header role="banner"
-        .container
-          .logo
-            img src="/img/logo.png"
-          .hero
-            img src="#{lorem.image('3000x2000')}"
+      .wide class="header"
+        img.wideImage class="bgImage" src="#{lorem.image('3000x2000')}"
+      .container class="header"
+        .row class="logo"
+          .span4
+            .logo
+              img src="/img/logo.png"
+          .span4
+            p
+              = lorem.sentence
+          .span4  
+            p
+              = lorem.sentence
       .navbar-wrapper
         .container
           == _partial "navigation"
