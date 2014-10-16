@@ -21,6 +21,9 @@ html.no-js
 
     link href="#{site_url+current_page.url}" rel="canonical"
 
+    <script src="//use.typekit.net/xvn6fgr.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+
     == stylesheet_link_tag "normalize", "main"
     == javascript_include_tag "vendor/modernizr-2.6.1.min.js"
   body class="#{page_classes}"
@@ -28,26 +31,21 @@ html.no-js
       p.chromeframe.alert.alert-warning
         | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
     #wrap
-      .wide class="header"
-        img.wideImage class="bgImage" src="#{lorem.image('3000x2000')}"
-      .container class="header"
-        .row class="logo"
+      .hero-unit role="banner" class="wideHeader"
+      .container
+        .row class="header"
           .span4
             .logo
-              img src="/img/logo.png"
-          .span4
-            p
-              = lorem.sentence
-          .span4  
-            p
-              = lorem.sentence
+              img.wideImage src="/img/logo.png"
+          .span7 class="offset1"
+            h1 Putting into practise Management Systems that will enable your business to thrive ...
       .navbar-wrapper
         .container
           == _partial "navigation"
-      main role="document"
+      #main role="document"
         .container
           == yield
-      footer.content-info role="content-info"
-        .container
-          p &copy; #{Time.now.year} #{site_title}
+    footer.content-info role="content-info"
+      .container
+        p &copy; #{Time.now.year} #{site_title}
     == javascript_include_tag "vendor/jquery-2.1.0.min.js", "jui/js/bootstrap.js", "main.js"
