@@ -26,7 +26,7 @@ activate :i18n
 # Use relative URLs
 activate :relative_assets
 # Pretty URLs
-activate :directory_indexes
+#activate :directory_indexes
 # Enable Bourbon
 activate :bourbon
 

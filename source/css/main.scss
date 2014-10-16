@@ -18,6 +18,8 @@ $brand-primary:             #61B5AB;
  * Custom extends and mixins
  * ========================================================================== */
 
+$break-tablet: 979px;
+$break-phone: 767px;
 
 
 /* ==========================================================================
@@ -52,22 +54,30 @@ body.index > #wrap > .wideHeader {
     right: 0;
     margin: 0;
     padding: 0;
-    min-height: 500px;
-    background-image: url('/img/home-bg.jpg');
+    min-height: 380px;
+    background-image: url('/img/hero-bg.png');
     background-position: center top;
-    background-size: 100% 500px;
+    background-size: 100% 380px;
     background-repeat: no-repeat;
     overflow: hidden;
     .bgImage {
-	max-height: 500px;
+	max-height: 380px;
+    }
+}
+
+.logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media screen and (max-width: $break-tablet) {
+	text-align: center;
     }
 }
 
 .header {
-    margin-top: -500px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 300px;
+    margin-top: -380px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    height: 350px;
     z-index: 05;
     overflow: hidden;
 }
@@ -80,8 +90,13 @@ body.index > #wrap > .wideHeader {
     width: 100%;
 }
 
+img.coverImage {
+    float: right;
+}
+
 #main {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* ==========================================================================
@@ -92,12 +107,14 @@ body {
   font-family: "source-sans-pro",sans-serif;
   font-size: 1em;
   line-height: 2.2ex;
+  color: #555;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "source-sans-pro",sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #00B3B2;
 }
 
 .header {
@@ -107,6 +124,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 2.2ex;
 	font-weight: 400;
 	font-style: normal;
+	color: #555;
+	@media screen and (max-width: $break-tablet) {
+	    font-size: 3em;
+	}
     }
 }
 
@@ -115,29 +136,43 @@ h1, h2, h3, h4, h5, h6 {
  * ========================================================================== */
 
 .navbar-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    margin-top: 425px;
-    margin-bottom: -90px;
+    @media screen and (min-width: $break-tablet) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin-top: 330px;
+	margin-bottom: 0;
+    }
 }
 
 .navbar-inner .container ul.nav {
-    float: right;
+    @media screen and (min-width: $break-tablet) {
+	float: right;
+    }
+}
+
+.navbar-inner .container a.brand {
+    @media screen and (min-width: $break-tablet) {
+	visibility: hidden;
+    }
 }
 
 .navbar-inner {
-    background: transparent;
-    box-shadow: 0px 0px !important;
-    border-width: 0 !important;
+    @media screen and (min-width: $break-tablet) {
+	background: transparent;
+	box-shadow: 0px 0px !important;
+	border-width: 0 !important;
+    }
 }
 
 .navbar .nav > li > a {
-    font-size: 1.6em;
-    color: red;
-    text-shadow: none;
+    @media screen and (min-width: $break-tablet) {
+	font-size: 1.6em;
+	color: red;
+	text-shadow: none;
+    }
 }
 
 /* ==========================================================================

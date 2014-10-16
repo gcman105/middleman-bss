@@ -31,17 +31,15 @@ html.no-js
       p.chromeframe.alert.alert-warning
         | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
     #wrap
+      .navbar-wrapper class="visible-desktop"
+        .container
+          == _partial "navigation"
+      .navbar-wrapper class="hidden-desktop"
+        == _partial "navigation"
       .hero-unit role="banner" class="wideHeader"
       .container
         .row class="header"
-          .span4
-            .logo
-              img.wideImage src="/img/logo.png"
-          .span7 class="offset1"
-            h1 Putting into practise Management Systems that will enable your business to thrive ...
-      .navbar-wrapper
-        .container
-          == _partial "navigation"
+          == _partial "#{page_classes}"
       #main role="document"
         .container
           == yield
