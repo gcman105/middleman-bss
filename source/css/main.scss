@@ -128,6 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 	@media screen and (max-width: $break-tablet) {
 	    font-size: 3em;
 	}
+	@media screen and (max-width: $break-phone) {
+	    font-size: 2em;
+	}
     }
 }
 
